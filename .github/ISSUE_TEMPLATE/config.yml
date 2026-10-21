@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Request a component
+    url: https://github.com/kodza-dev/requests/discussions/new?category=requests
+    about: Ideas go to Discussions, where people can vote on them.

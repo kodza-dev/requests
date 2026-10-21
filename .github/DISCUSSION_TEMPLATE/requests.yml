@@ -1,0 +1,44 @@
+title: "Request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One component per request. Searched already? Good. If it's there, upvote it instead.
+  - type: input
+    id: name
+    attributes:
+      label: What would you call it?
+      placeholder: Magnetic button, sticky table of contents, before/after slider...
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What should it do?
+      description: What the visitor does, what moves, what happens. Keyboard and touch too, if you have an opinion.
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Where would you use it?
+      description: The real page it goes on. A pricing page, a blog, a SaaS dashboard, a shop, a WordPress theme...
+    validations:
+      required: true
+  - type: dropdown
+    id: stack
+    attributes:
+      label: Where does it go?
+      multiple: true
+      options:
+        - Plain HTML page
+        - WordPress
+        - Shopify
+        - React / Next.js
+        - Claude artifact
+        - Somewhere else
+  - type: input
+    id: reference
+    attributes:
+      label: Seen it somewhere?
+      description: A link to a site or a demo that does something close. Optional.

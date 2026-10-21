@@ -1,0 +1,42 @@
+name: Bug report
+description: A Kodza component doesn't behave the way it should.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Its name, or the link to its page on kodza.dev.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where is it running?
+      multiple: true
+      options:
+        - Plain HTML page
+        - WordPress
+        - Shopify
+        - React / Next.js
+        - Claude artifact
+        - Pasted by an AI through the MCP
+        - Somewhere else
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Safari on iPhone, Chrome on Windows...
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else?
+      description: A screenshot, the page where it breaks, your WordPress theme. Drag files here.
